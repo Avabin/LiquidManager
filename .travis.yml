@@ -3,6 +3,11 @@ language:
  - java
 scala: 2.13.0-M1
 jdk: oraclejdk8
+branches:
+  only:
+    - master
+  except:
+    - /^pr\..*/
 before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
