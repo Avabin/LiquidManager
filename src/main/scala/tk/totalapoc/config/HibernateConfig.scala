@@ -25,7 +25,7 @@ class HibernateConfig {
   }
 
   @Bean def getDataSource: DataSource = {
-    var dataSource: DriverManagerDataSource = new DriverManagerDataSource()
+    val dataSource: DriverManagerDataSource = new DriverManagerDataSource()
     dataSource setDriverClassName "org.postgresql.Driver"
     dataSource setUrl sys.env("DATABASE_URL_T")
     dataSource setUsername sys.env("DATABASE_USERNAME")
