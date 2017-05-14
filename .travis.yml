@@ -1,4 +1,13 @@
-language: scala
+language:
+ - scala
+ - java
+scala: 2.13.0-M1
+jdk: oraclejdk8
+script: gradle clean build
+cache:
+  directories:
+    - $HOME/.gradle/
+    - .gradle/
 deploy:
   provider: heroku
   api_key:
