@@ -8,6 +8,8 @@ cache:
   directories:
     - $HOME/.gradle/
     - .gradle/
+before_install:
+  - chmod +x gradlew
 deploy:
   provider: heroku
   api_key:
