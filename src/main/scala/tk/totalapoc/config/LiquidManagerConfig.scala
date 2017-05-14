@@ -1,7 +1,6 @@
 package tk.totalapoc.config
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
-import org.springframework.context.annotation.{Bean, ComponentScan, Configuration}
 import tk.totalapoc.beans.RestAuthenticationEntryPoint
 
 /**
